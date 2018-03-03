@@ -1,1 +1,2 @@
-# js01 EthanK.
+#js01 EthanK.
+#FIRST ATOM THINGAMAJIG!!
