@@ -2,11 +2,16 @@ body{
   background-color: rgb(200, 200, 255)
 }
 @keyframes moveAroundCorners {
-    0%   {left:0%; top:0%;}
-    25%  {left:90%; top:0%;}
-    50%  {left:90%; top:83%;}
-    75%  {left:0%; top:83%;}
-    100% {left:0%; top:0%;}
+    0%   {left:0%; top:0%; opacity:0;}
+    25%  {left:90%; top:0%; opacity: 1;}
+    50%  {left:90%; top:83%; opacity: 0;}
+    75%  {left:0%; top:83%; opacity: 1;}
+    100% {left:0%; top:0%; opacity:0;}
+}
+#firstImage:hover{
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
 }
 .title{
   text-align: center;
@@ -23,6 +28,7 @@ body{
   position: relative;
   left: 50%;
   margin-left: -250px;
+  opacity: 0;
 }
 #movingDuck1{
   position: fixed;
