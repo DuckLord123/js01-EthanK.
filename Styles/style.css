@@ -1,0 +1,16 @@
+.blue
+{
+  color: rgb(0, 0, 255);
+}
+.big
+{
+  font-size: 100px;
+}
+h1
+{
+  text-align: center;
+}
+*
+{
+  font-family: verdana;
+}
