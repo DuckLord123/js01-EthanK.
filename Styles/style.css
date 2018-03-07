@@ -1,16 +1,16 @@
-.blue
-{
-  color: rgb(0, 0, 255);
+body{
+  background-color: rgb(200,200,255)
 }
-.big
-{
-  font-size: 100px;
-}
-h1
-{
+.title{
   text-align: center;
+  font-size: 25px;
+  color: rgb(0,0,255);
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  border-bottom: 5px solid rgb(150,255,255);
+  width: 500px;
 }
-*
-{
+*{
   font-family: verdana;
 }
