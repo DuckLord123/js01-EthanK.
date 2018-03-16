@@ -68,9 +68,6 @@ form{
   color: rgb(0, 0, 200);
   font-size: 20px;
 }
-.formBubble{
-  radius: 10px;
-}
 *{
   font-family: "Coiny";
 }
