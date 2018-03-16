@@ -2,23 +2,16 @@ body{
   background-color: rgb(200, 200, 255)
 }
 @keyframes moveAroundCornersLikeAGhost {
-    0%   {left: 0%; top: 0%; opacity: 0;}
-    10%  {left: 0%; top: 0%; opacity: 0;}
-    30%  {left: 90%; top: 0%; opacity: 1; transform: rotate(90deg);}
-    50%  {left: 90%; top: 83%; opacity: 0; transform: rotate(180deg);}
-    60%  {left: 90%; top: 83%; opacity: 0;}
-    80%  {left: 0%; top: 83%; opacity: 1; transform: rotate(270deg);}
-    100% {left: 0%; top: 0%; opacity: 0; transform: rotate(360deg)}
-}
-#firstImage:hover{
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 2s;
+    0%   {left: 0%; top: 0%; opacity: 0.25; transform: rotate(0deg); filter: hue-rotate(0deg);}
+    25%  {left: 90%; top: 0%; opacity: 1; transform: rotate(90deg); filter: hue-rotate(90deg);}
+    50%  {left: 90%; top: 83%; opacity: 0.25; transform: rotate(180deg); filter: hue-rotate(180deg);}
+    75%  {left: 0%; top: 83%; opacity: 1; transform: rotate(270deg); filter: hue-rotate(270deg);}
+    100% {left: 0%; top: 0%; opacity: 0.25; transform: rotate(360deg); filter: hue-rotate(360deg);}
 }
 .title{
   text-align: center;
-  font-size: 25px;
-  color: rgb(0,0,255);
+  font-size: 50px;
+  color: rgb(0, 0, 255);
   position: relative;
   left: 50%;
   margin-left: -250px;
@@ -26,11 +19,26 @@ body{
   width: 500px;
   margin-bottom: 30px;
 }
+.list{
+  align-items: center;
+  font-size: 25px;
+  color: rgb(0, 0, 200);
+  width: 400px;
+  position: relative;
+  left: 50%;
+  margin-left: -200px;
+}
 #firstImage{
   position: relative;
   left: 50%;
   margin-left: -250px;
   opacity: 0;
+  filter: drop-shadow(15px 15px 5px rgb(50, 50, 100)) contrast(200%);
+}
+#firstImage:hover{
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
 }
 #movingDuck1{
   position: fixed;
@@ -38,6 +46,31 @@ body{
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
+form{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 200);
+  width: 500px;
+  position: relative;
+  left: 50%;
+  margin-left: -200px;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
+.textBox{
+  width: 300px;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: rgb(175, 175, 255);
+  color: rgb(0, 0, 200);
+  font-size: 20px;
+}
+.formBubble{
+  radius: 10px;
+}
 *{
-  font-family: verdana;
+  font-family: "Coiny";
 }
