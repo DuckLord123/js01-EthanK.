@@ -2,11 +2,16 @@ body{
   background-color: rgb(200, 200, 255)
 }
 @keyframes moveAroundCornersLikeAGhost {
-    0%   {left: 0%; top: 0%; opacity: 0.25; transform: rotate(0deg); filter: hue-rotate(0deg);}
-    25%  {left: 90%; top: 0%; opacity: 1; transform: rotate(90deg); filter: hue-rotate(90deg);}
-    50%  {left: 90%; top: 83%; opacity: 0.25; transform: rotate(180deg); filter: hue-rotate(180deg);}
-    75%  {left: 0%; top: 83%; opacity: 1; transform: rotate(270deg); filter: hue-rotate(270deg);}
-    100% {left: 0%; top: 0%; opacity: 0.25; transform: rotate(360deg); filter: hue-rotate(360deg);}
+  0%   {left: 0%; top: 0%; opacity: 0.25; transform: rotate(0deg); filter: hue-rotate(0deg);}
+  25%  {left: 90%; top: 0%; opacity: 1; transform: rotate(90deg); filter: hue-rotate(90deg);}
+  50%  {left: 90%; top: 83%; opacity: 0.25; transform: rotate(180deg); filter: hue-rotate(180deg);}
+  75%  {left: 0%; top: 83%; opacity: 1; transform: rotate(270deg); filter: hue-rotate(270deg);}
+  100% {left: 0%; top: 0%; opacity: 0.25; transform: rotate(360deg); filter: hue-rotate(360deg);}
+}
+@keyframes getBigger {
+  0%   {padding-top: 0px; padding-bottom: 0px;}
+  1% {padding-top: 15px; padding-bottom: 15px; background-color: rgb(150, 150, 255);}
+  100% {padding-top: 15px; padding-bottom: 15px; background-color: rgb(150, 150, 255);}
 }
 .title{
   text-align: center;
@@ -54,9 +59,6 @@ form{
   position: relative;
   left: 50%;
   margin-left: -200px;
-  position: relative;
-  left: 50%;
-  margin-left: -250px;
 }
 .textBox{
   width: 300px;
@@ -67,6 +69,29 @@ form{
   background-color: rgb(175, 175, 255);
   color: rgb(0, 0, 200);
   font-size: 20px;
+}
+table {
+  font-size: 25px;
+  color: rgb(0, 0, 200);
+  width: 500px;
+  position: relative;
+  left: 50%;
+  margin-left: -200px;
+  border: 5px solid rgb(0, 0, 200);
+  border-radius: 15px;
+}
+td{
+  border: 5px solid rgb(0, 0, 200);
+  border-radius: 15px;
+}
+td:hover{
+  animation-name: getBigger;
+  animation-duration: 100s;
+}
+#top{
+  text-align: center;
+  padding: 15px;
+  color: rgb(0, 0, 150);
 }
 *{
   font-family: "Coiny";
