@@ -45,6 +45,11 @@ body{
   transition-property: opacity;
   transition-duration: 2s;
 }
+#buttonDuck{
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+}
 #movingDuck1{
   position: fixed;
   animation-name: moveAroundCornersLikeAGhost;
@@ -58,7 +63,7 @@ form{
   width: 500px;
   position: relative;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -250px;
 }
 .textBox{
   width: 300px;
@@ -70,13 +75,13 @@ form{
   color: rgb(0, 0, 200);
   font-size: 20px;
 }
-table {
+#ranking {
   font-size: 25px;
   color: rgb(0, 0, 200);
   width: 500px;
   position: relative;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -250px;
   border: 5px solid rgb(0, 0, 200);
   border-radius: 15px;
 }
@@ -92,6 +97,18 @@ td:hover{
   text-align: center;
   padding: 15px;
   color: rgb(0, 0, 150);
+}
+button{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 200);
+  width: 250px;
+  position: relative;
+}
+#duckButtons{
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
 }
 *{
   font-family: "Coiny";
