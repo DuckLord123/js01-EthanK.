@@ -110,6 +110,10 @@ button{
   left: 50%;
   margin-left: -250px;
 }
+#variableButton{
+  left: 50%;
+  margin-left: -125px;
+}
 *{
   font-family: "Coiny";
 }
