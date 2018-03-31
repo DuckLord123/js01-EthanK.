@@ -75,7 +75,7 @@ form{
   color: rgb(0, 0, 200);
   font-size: 20px;
 }
-#ranking {
+table {
   font-size: 25px;
   color: rgb(0, 0, 200);
   width: 500px;
@@ -111,6 +111,10 @@ button{
   margin-left: -250px;
 }
 #variableButton{
+  left: 50%;
+  margin-left: -125px;
+}
+#formBSubmit{
   left: 50%;
   margin-left: -125px;
 }
